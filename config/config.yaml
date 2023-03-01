@@ -1,0 +1,5 @@
+model_path: 'model/diffusers/chilloutmix'
+device: 'cuda:2'
+generated_image_save_path: 'generated_content/images_transfer'
+save_path: 'generated_content'
+jpg_quality: 95
