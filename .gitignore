@@ -129,7 +129,3 @@ dmypy.json
 .pyre/
 
 test.ipynb
-
-generated_content/images_save/*
-generated_content/images_transfer/*
-generated_content/images_info/*

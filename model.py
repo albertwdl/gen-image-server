@@ -36,7 +36,7 @@ class SDModel():
         for image in images:
             image.save(os.path.join(path, 'images_transfer', f'img-{job_id:05}-{image_id:03}.jpg'), quality=quality)
             image.save(os.path.join(path, 'images_save', f'img-{job_id:05}-{image_id:03}.png'))
-            with open(os.path.join(path, 'images_info', 'images_info.log'), 'a') as f:
+            with open(os.path.join(path, 'images_info', 'images_info'), 'a') as f:
                 f.writelines(f'{job_id},{image_id},{prompt}\n')
             image_id += 1
         self.job_status_dict[self.next_job_id - 1] = 'Done'
